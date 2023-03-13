@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="horizontal"
+        android:background="@drawable/card_shape">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="93dp"
+            android:layout_height="93dp"
+            android:src="@drawable/person"
+            android:layout_margin="12dp"
+
+            app:shapeAppearanceOverlay="@style/cardImageStyle" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name"
+                android:textColor="@color/blackTextColor"
+                android:textSize="16dp"
+                android:layout_marginBottom="8dp"
+                app:fontFamily="@font/dm_sans"
+                app:fontStyle="normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/job"
+                android:textColor="@color/blackText_400"
+                android:textSize="12dp"
+                app:fontFamily="@font/dm_sans"
+                app:fontStyle="normal" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_location_24"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/city"
+                    android:textColor="@color/blackText_300"
+                    android:textSize="13dp"
+                    android:layout_marginStart="4dp"
+                    app:fontFamily="@font/dm_sans"
+                    app:fontStyle="normal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="11dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(150 Reviews)"
+                    android:textColor="@color/blackTextColor"
+                    android:textSize="12dp"
+                    android:layout_marginStart="4dp"
+                    app:fontFamily="@font/dm_sans"
+                    app:fontStyle="normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4.5"
+                    android:textColor="@color/blackTextColor"
+                    android:textSize="12dp"
+                    android:layout_marginStart="8dp"
+                    app:fontFamily="@font/dm_sans"
+                    app:fontStyle="normal" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_star_24"
+                    android:layout_marginStart="4dp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="40dp"
+            android:gravity="end"
+            android:layout_alignParentLeft="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 hr"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/text_shape"
+                app:fontFamily="@font/dm_sans"
+                app:fontStyle="normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="9dp"
+                android:text="Russian"
+                android:textColor="@color/blackText_400"
+                android:textSize="12dp"
+                app:fontFamily="@font/dm_sans"
+                app:fontStyle="normal" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:text="5 Days Ago"
+                    android:textColor="@color/blackText_300"
+                    android:textSize="13dp"
+                    app:fontFamily="@font/dm_sans"
+                    app:fontStyle="normal" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
